@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "rootDir": "./src",
+    "noEmit": true
+  },
+  "exclude": [
+    "./node_modules",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "./src"
+  ],
+  "typeRoots": [
+    "./src/@types",
+    "../@types"
+  ],
+  "compileOnSave": true
+}

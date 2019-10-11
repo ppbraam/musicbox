@@ -1,0 +1,40 @@
+// Sizes
+$container-padding:           2rem;
+$container-min-width-small:   48rem;
+$container-min-width-medium:  64rem;
+$container-min-width-large:   1448px;
+
+$container-small:   calc(#{$container-min-width-small});
+$container-medium:  calc(#{$container-min-width-medium});
+$container-large:   calc(#{$container-min-width-large});
+
+// Typography
+$f-primary: system-ui, sans-serif;
+$f-secondary: Georgia, serif;
+
+// Colours
+$c-primary:   crimson;
+$c-secondary: dodgerblue;
+$c-tertirary: lime;
+$c-white:     white;
+$c-black:     black;
+
+$darkmode-enabled: true;
+
+:root {
+  --c-primary:      #{$c-primary};
+  --c-secondary:    #{$c-secondary};
+  --c-white:        #{$c-white};
+  --c-black:        #{$c-black};
+}
+
+@if $darkmode-enabled {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --c-primary: #{$c-tertirary};
+      --c-secondary: #{$c-secondary};
+      --c-white: #{$c-black};
+      --c-black: #{$c-white};
+    }
+  }
+}

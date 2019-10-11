@@ -1,0 +1,24 @@
+@import "../../styles/helpers";
+
+.user-badge {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid currentColor;
+
+  &__avatar {
+    display: inline-block;
+    width: 2rem;
+    border-radius: 2rem;
+  }
+
+  &__nametag {
+    display: inline-block;
+    margin-left: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+}

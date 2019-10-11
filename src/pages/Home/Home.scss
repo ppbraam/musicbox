@@ -1,0 +1,32 @@
+@import "../../styles/helpers";
+
+.home-page {
+
+  &__title {
+    animation: blink 1s steps(1) infinite;
+  }
+
+  &__user-selector {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--c-black);
+
+    @include for-size(tablet-portrait-up) {
+      display: inline;
+      margin-top: 0;
+      margin-left: .5rem;
+
+      &--wider-margin {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__login-button {
+    @extend %button;
+
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

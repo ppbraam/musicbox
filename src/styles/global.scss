@@ -1,0 +1,38 @@
+@import "helpers";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $f-primary;
+  font-size: 1rem;
+  color: var(--c-primary);
+  background-color: var(--c-white);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+
+  @include for-size(tablet-portrait-up) {
+    max-width: $container-small;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    max-width: $container-medium;
+  }
+
+  @include for-size(desktop-up) {
+    max-width: $container-large;
+  }
+}
