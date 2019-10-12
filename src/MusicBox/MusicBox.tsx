@@ -1,14 +1,12 @@
-import React, { FC, Component, useState } from 'react';
+import React, { Component } from 'react';
 import MidiPlayer from 'midi-player-js';
 
-// Initialize player and register event handler
-const Player = new MidiPlayer.Player((e) => {
+const Player = new MidiPlayer.Player((e: any) => {
   console.log(e);
 });
 
 interface Props {
   file: string,
-  el: HTMLDivElement,
 }
 
 interface State {
@@ -17,7 +15,8 @@ interface State {
 
 export class MusicBox extends Component<Props, State> {
   componentDidMount() {
-    Player.loadFile('./espanja.mid');
+    const { file } = this.props;
+    Player.loadFile(file);
     Player.play();
   }
 
