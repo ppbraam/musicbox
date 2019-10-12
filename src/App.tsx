@@ -11,7 +11,7 @@ const App: React.FC = () => {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-            style={{ color: 'red' }}
+          style={{ color: 'red' }}
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
