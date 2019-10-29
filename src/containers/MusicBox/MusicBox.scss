@@ -1,0 +1,8 @@
+@import "../../styles/helpers";
+
+.music-box {
+  &__canvas {
+    width: 400px;
+    height: 300px;
+  }
+}

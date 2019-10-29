@@ -9,7 +9,7 @@ import LanguageContext from './context/LanguageContext';
 import { isAvailableTranslation } from './helpers/TypeGuards';
 import Routes from './Routes';
 import { AvailableTranslations } from './translations/Translator';
-
+import './styles/global.scss';
 
 const App: FC = (): ReactElement => {
   const [language, setLanguage] = useState<AvailableTranslations>(
